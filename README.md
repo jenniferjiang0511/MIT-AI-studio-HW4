@@ -13,8 +13,8 @@ The libraries that I've used include:
 Libraries:
 - openai-whisper is for STT
 - Kokoro (KPipeline) is for TTS
-- soundfile + numpy is for writing .wav files and handle audio arrays.
-- pathlib and urlparse are used to resolve file paths & format caption timestamps.
+- soundfile for handling .wav files/audio files
+- pathlib and urlparse are used to resolve file paths & format caption timestamps
 
 In the first exmaple/run, I showed that my outputs folder is empty. I then open the program, and input a text message, "nice to meet you...". Then, I let the program run and I will get back a text reply (outputs/reply.txt) and a audio file (outputs/reply_speech.wav) corresponding to that text reply in the outputs folder. Here, if input is text, my twin agent will write in outputs/reply.txt its reply, and the TTS agent calls kokoro_tts using outputs/reply.txt and generates outputs/reply_speech.wav.
 
